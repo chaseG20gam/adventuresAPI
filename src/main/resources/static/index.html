@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures API</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <h1>Adventures</h1>
+
+    <!-- Form to create or update an adventure-->
+     <form id="adventureForm">
+        <input type="hidden" id="adventureId">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+        <label for="numPhotos">Number of Photos:</label>
+        <input type="number" id="numPhotos" name="numPhotos">
+        <label for="blogCompleted">Blog Completed:</label>
+        <input type="checkbox" id="blogCompleted" name="blogCompleted">
+        <button type="submit" class="cybr-btn">Submit</button>
+     </form>
+
+    <!-- Table to display adventures -->
+    <table id="adventures">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Number of Photos</th>
+                <th>Blog Completed</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be populated by JavaScript-->
+        </tbody>
+    </table>
+
+    <script src="/script.js"></script>
+</body>
+</html>
