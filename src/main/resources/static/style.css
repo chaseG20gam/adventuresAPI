@@ -1,4 +1,4 @@
-/* General Reset and Font */
+/* general Reset and Font */
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +11,13 @@ body {
     background: #17182b;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Keep content at the top */
+    justify-content: flex-start; /* keep content at the top */
     align-items: center;
     min-height: 100vh;
-    overflow: auto; /* Allow scrolling when content overflows */
+    overflow: auto; /* allow scrolling when content overflows */
 }
 
-/* Font Face for Cyberpunk Style */
+/* font face for Cyberpunk Style */
 @font-face {
     font-family: Cyber;
     src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
@@ -30,7 +30,7 @@ h1 {
     text-align: center;
 }
 
-/* Basic Form Styling */
+/* basic form styling */
 form {
     margin-bottom: 20px;
     text-align: center;
@@ -38,34 +38,34 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    position: relative; /* Keeps form elements at the top */
+    position: relative; /* keeps form elements at the top */
 }
 
-/* Label Styling */
+/* label styling */
 label {
     display: block;
     margin-top: 10px;
-    color: #00f5ff; /* Light blue color */
+    color: #00f5ff; /* light blue color */
     font-weight: bold;
 }
 
-/* Adjust checkbox and label alignment */
+/* adjust checkbox and label alignment */
 label[for="blogCompleted"] {
     display: inline-block;
-    margin-right: 10px; /* Space between label and checkbox */
+    margin-right: 10px; /* space between label and checkbox */
 }
 
-/* Input Fields and Buttons */
+/* input fields and buttons */
 input, select, button {
     margin-top: 5px;
     font-size: 16px;
     padding: 10px;
-    width: 100%; /* Ensure input fields take up full width */
-    max-width: 300px; /* Limit maximum width */
-    box-sizing: border-box; /* Prevent overflow */
+    width: 100%; /* ensure input fields take up full width */
+    max-width: 300px; /* limit maximum width */
+    box-sizing: border-box; /* prevent overflow */
 }
 
-/* Cyberpunk Button */
+/* cyberpunk button */
 .cybr-btn {
     --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
     --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
@@ -92,7 +92,7 @@ input, select, button {
     box-shadow: inset -3px 0 0 var(--shadow-primary);
     clip-path: polygon(-10% -10%, 110% -10%, 110% 110%, 10% 110%, -10% 40%);
     width: 100%;
-    max-width: 400px; /* Limit width of submit button */
+    max-width: 400px; /* limit width of submit button */
 }
 
 .cybr-btn:hover {
@@ -116,34 +116,34 @@ input, select, button {
     box-shadow: 2px 0 inset var(--shadow-primary);
 }
 
-/* Table Styling */
+/* table styling */
 table {
-    width: 90%; /* Increase table width */
-    max-width: 1200px; /* Max table width for large screens */
+    width: 90%; /* increase table width */
+    max-width: 1200px; /* max table width for large screens */
     border-collapse: collapse;
     margin-top: 20px;
     background-color: #2d2f45;
-    max-height: 600px; /* Increase table height */
-    overflow-y: auto; /* Make it scrollable vertically */
+    max-height: 600px; /* increase table height */
+    overflow-y: auto; /* make it scrollable vertically */
     display: block;
-    margin-bottom: 20px; /* Add spacing below the table */
+    margin-bottom: 20px; /* add spacing below the table */
 }
 
 table td {
     text-align: center;
 }
 
-/* Sticky Table Headers */
+/*sticky table headers */
 th {
-    background-color: #00f5ff; /* Light blue background for contrast */
-    color: #17182b; /* Dark text color for readability */
+    background-color: #00f5ff; /* light blue background for contrast */
+    color: #17182b; /* dark text color for readability */
     position: sticky;
     top: 0;
     z-index: 10;
     padding: 12px;
 }
 
-/* Table Data Cells */
+/* table Data Cells */
 th, td {
     border: 1px solid #333;
     padding: 8px;
@@ -152,7 +152,7 @@ th, td {
     word-wrap: break-word;
 }
 
-/* Buttons */
+/* buttons */
 button {
     cursor: pointer;
     font-size: 16px;

@@ -1,7 +1,7 @@
 # Adventures API
 
 AdventuresAPI is a CRUD application built using Java, Spring Boot, and MySQL. It allows users to manage a collection of travel adventures by creating, reading, updating, and deleting entries through a simple web interface.
-This is an example project I made to put my knowledge to the test, it is simple and rudimentary
+This is an example project I made to put my knowledge to the test.
 
 ## Features
 - Add, edit, and delete adventure entries
@@ -29,6 +29,7 @@ spring.datasource.url=jdbc:mysql://localhost:3306/adventures_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 ```
+There is a SQL file inside resources that contains a quick set up to quickly create and fill a database with some adventures.
 
 ### 3. Build and Run the Application
 Use Maven to build and run the project:
